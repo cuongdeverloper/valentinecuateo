@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #fbeaff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  width: 100vw;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden; 
 }
 
-.App-link {
-  color: #61dafb;
+.gif-image {
+  height: 200px;
+  width: auto;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-container {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d32f2f;
+  margin-bottom: 30px;
 }
+
+/* Container chứa 2 nút */
+.button-bar {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  
+  align-items: center; 
+  justify-content: center;
+}
+
+.button-bar button {
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.yes-button {
+  border-radius: 12px 0 0 12px;
+  /* Padding mặc định, sẽ to lên nhờ fontSize trong JS */
+  padding: 20px 0; 
+  min-height: 60px; /* Chiều cao tối thiểu ban đầu */
+}
+
+.no-button {
+  border-radius: 0 12px 12px 0;
+  height: 60px; 
+}
+
