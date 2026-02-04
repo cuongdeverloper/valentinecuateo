@@ -24,7 +24,7 @@ export default function App() {
   }
 
   function getNoButtonText() {
-    const phrases = ["No", "Chắc chưa?", "Chắc chắn chưaaa?", "Nói có ii", "Đừng phũ phàng thế", "Có đi mòoooooooo 😭"];
+    const phrases = ["No", "Chắc chưa?", "Chắc chắn chưaaa?", "Nói có ii", "Có đi mòoooooooo 😭"];
     return phrases[Math.min(noCount, phrases.length - 1)];
   }
 
